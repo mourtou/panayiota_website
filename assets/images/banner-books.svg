@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1410"/>
+      <stop offset="50%" stop-color="#221814"/>
+      <stop offset="100%" stop-color="#0f0a08"/>
+    </linearGradient>
+    <linearGradient id="book-a" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a2820"/>
+      <stop offset="100%" stop-color="#1a100c"/>
+    </linearGradient>
+    <linearGradient id="book-b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a3328"/>
+      <stop offset="100%" stop-color="#251812"/>
+    </linearGradient>
+    <linearGradient id="book-c" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a3e30"/>
+      <stop offset="100%" stop-color="#2e1f18"/>
+    </linearGradient>
+    <linearGradient id="book-d" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c1f18"/>
+      <stop offset="100%" stop-color="#15100c"/>
+    </linearGradient>
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="500" fill="url(#bg)"/>
+
+  <!-- Bookshelf row 1 (back/dimmer) -->
+  <g opacity="0.6">
+    <rect x="0"    y="40"  width="38" height="280" fill="url(#book-d)"/>
+    <rect x="38"   y="60"  width="32" height="260" fill="url(#book-a)"/>
+    <rect x="70"   y="30"  width="42" height="290" fill="url(#book-d)"/>
+    <rect x="112"  y="50"  width="36" height="270" fill="url(#book-b)"/>
+    <rect x="148"  y="40"  width="40" height="280" fill="url(#book-d)"/>
+    <rect x="188"  y="70"  width="34" height="250" fill="url(#book-a)"/>
+    <rect x="222"  y="35"  width="44" height="285" fill="url(#book-d)"/>
+    <rect x="266"  y="55"  width="38" height="265" fill="url(#book-b)"/>
+    <rect x="304"  y="45"  width="36" height="275" fill="url(#book-d)"/>
+  </g>
+
+  <!-- Bookshelf row 2 (main row - more vivid) -->
+  <g>
+    <!-- Repeat pattern across the width -->
+    <g id="books">
+      <rect x="0"   y="80" width="48" height="340" fill="url(#book-c)"/>
+      <rect x="48"  y="60" width="42" height="360" fill="url(#book-a)"/>
+      <rect x="90"  y="100" width="55" height="320" fill="url(#book-b)"/>
+      <rect x="145" y="75" width="40" height="345" fill="url(#book-d)"/>
+      <rect x="185" y="90" width="50" height="330" fill="url(#book-c)"/>
+      <rect x="235" y="65" width="44" height="355" fill="url(#book-a)"/>
+      <rect x="279" y="95" width="38" height="325" fill="url(#book-b)"/>
+      <rect x="317" y="85" width="52" height="335" fill="url(#book-d)"/>
+      <rect x="369" y="70" width="46" height="350" fill="url(#book-c)"/>
+      <rect x="415" y="100" width="40" height="320" fill="url(#book-a)"/>
+      <rect x="455" y="80" width="48" height="340" fill="url(#book-b)"/>
+      <rect x="503" y="65" width="42" height="355" fill="url(#book-d)"/>
+      <rect x="545" y="90" width="50" height="330" fill="url(#book-c)"/>
+      <rect x="595" y="75" width="44" height="345" fill="url(#book-a)"/>
+      <rect x="639" y="85" width="38" height="335" fill="url(#book-b)"/>
+      <rect x="677" y="60" width="52" height="360" fill="url(#book-d)"/>
+      <rect x="729" y="100" width="46" height="320" fill="url(#book-c)"/>
+      <rect x="775" y="80" width="40" height="340" fill="url(#book-a)"/>
+      <rect x="815" y="70" width="48" height="350" fill="url(#book-b)"/>
+      <rect x="863" y="95" width="42" height="325" fill="url(#book-d)"/>
+      <rect x="905" y="85" width="50" height="335" fill="url(#book-c)"/>
+      <rect x="955" y="65" width="44" height="355" fill="url(#book-a)"/>
+      <rect x="999" y="100" width="38" height="320" fill="url(#book-b)"/>
+      <rect x="1037" y="80" width="52" height="340" fill="url(#book-d)"/>
+      <rect x="1089" y="70" width="46" height="350" fill="url(#book-c)"/>
+      <rect x="1135" y="95" width="40" height="325" fill="url(#book-a)"/>
+      <rect x="1175" y="85" width="48" height="335" fill="url(#book-b)"/>
+      <rect x="1223" y="60" width="42" height="360" fill="url(#book-d)"/>
+      <rect x="1265" y="90" width="50" height="330" fill="url(#book-c)"/>
+      <rect x="1315" y="75" width="44" height="345" fill="url(#book-a)"/>
+      <rect x="1359" y="85" width="38" height="335" fill="url(#book-b)"/>
+      <rect x="1397" y="100" width="52" height="320" fill="url(#book-d)"/>
+      <rect x="1449" y="80" width="46" height="340" fill="url(#book-c)"/>
+      <rect x="1495" y="70" width="40" height="350" fill="url(#book-a)"/>
+      <rect x="1535" y="95" width="48" height="325" fill="url(#book-b)"/>
+      <rect x="1583" y="85" width="17" height="335" fill="url(#book-d)"/>
+    </g>
+  </g>
+
+  <!-- Subtle warm light from above -->
+  <rect width="1600" height="160" fill="url(#vignette)"/>
+  <!-- Bottom shadow -->
+  <rect y="380" width="1600" height="120" fill="#000" opacity="0.35"/>
+</svg>

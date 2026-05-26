@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="700" viewBox="0 0 560 700">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ededed"/><stop offset="1" stop-color="#cfcfcf"/></linearGradient></defs>
+<rect width="560" height="700" fill="url(#g)"/>
+<circle cx="280" cy="225" r="88" fill="#bdbdbd"/>
+<path d="M135 625c22-144 90-224 145-224s123 80 145 224" fill="#aaa"/>
+<text x="280" y="662" text-anchor="middle" font-family="Arial" font-size="22" fill="#777" letter-spacing="4">PHOTO PLACEHOLDER</text>
+</svg>

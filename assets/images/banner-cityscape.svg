@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Sky gradient: dusk warm to dark -->
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5d4838"/>
+      <stop offset="22%" stop-color="#6b5040"/>
+      <stop offset="45%" stop-color="#4a3a32"/>
+      <stop offset="70%" stop-color="#2e2a30"/>
+      <stop offset="100%" stop-color="#1a1820"/>
+    </linearGradient>
+    <!-- Warm glow at horizon -->
+    <radialGradient id="glow" cx="55%" cy="62%" r="55%">
+      <stop offset="0%" stop-color="#c47a3a" stop-opacity="0.55"/>
+      <stop offset="35%" stop-color="#a05530" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Far back building layer -->
+    <linearGradient id="bldg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a262e"/>
+      <stop offset="100%" stop-color="#1d1a22"/>
+    </linearGradient>
+    <linearGradient id="bldg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1d1a20"/>
+      <stop offset="100%" stop-color="#100e15"/>
+    </linearGradient>
+    <linearGradient id="bldg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e0c12"/>
+      <stop offset="100%" stop-color="#050409"/>
+    </linearGradient>
+    <!-- Subtle haze -->
+    <linearGradient id="haze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#000" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.45"/>
+    </linearGradient>
+    <!-- Noise / grain pattern -->
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.06 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1600" height="500" fill="url(#sky)"/>
+  <!-- Horizon glow -->
+  <rect width="1600" height="500" fill="url(#glow)"/>
+
+  <!-- Far back buildings (layer 1) -->
+  <g fill="url(#bldg1)">
+    <rect x="20"   y="260" width="60" height="240"/>
+    <rect x="90"   y="220" width="40" height="280"/>
+    <rect x="140"  y="280" width="80" height="220"/>
+    <rect x="230"  y="240" width="55" height="260"/>
+    <rect x="295"  y="210" width="70" height="290"/>
+    <rect x="375"  y="265" width="45" height="235"/>
+    <rect x="430"  y="230" width="60" height="270"/>
+    <rect x="500"  y="195" width="80" height="305"/>
+    <rect x="590"  y="245" width="50" height="255"/>
+    <rect x="650"  y="225" width="65" height="275"/>
+    <rect x="725"  y="200" width="55" height="300"/>
+    <rect x="790"  y="240" width="75" height="260"/>
+    <rect x="875"  y="215" width="50" height="285"/>
+    <rect x="935"  y="255" width="70" height="245"/>
+    <rect x="1015" y="225" width="55" height="275"/>
+    <rect x="1080" y="265" width="60" height="235"/>
+    <rect x="1150" y="220" width="80" height="280"/>
+    <rect x="1240" y="245" width="50" height="255"/>
+    <rect x="1300" y="210" width="65" height="290"/>
+    <rect x="1375" y="250" width="55" height="250"/>
+    <rect x="1440" y="225" width="70" height="275"/>
+    <rect x="1520" y="265" width="60" height="235"/>
+  </g>
+
+  <!-- Mid buildings (layer 2) -->
+  <g fill="url(#bldg2)">
+    <rect x="0"    y="310" width="70" height="190"/>
+    <rect x="80"   y="290" width="55" height="210"/>
+    <rect x="145"  y="320" width="90" height="180"/>
+    <rect x="245"  y="280" width="50" height="220"/>
+    <rect x="305"  y="305" width="75" height="195"/>
+    <rect x="390"  y="285" width="60" height="215"/>
+    <rect x="460"  y="320" width="55" height="180"/>
+    <rect x="525"  y="270" width="85" height="230"/>
+    <rect x="620"  y="295" width="55" height="205"/>
+    <rect x="685"  y="315" width="70" height="185"/>
+    <rect x="765"  y="280" width="60" height="220"/>
+    <rect x="835"  y="305" width="80" height="195"/>
+    <rect x="925"  y="285" width="55" height="215"/>
+    <rect x="990"  y="320" width="65" height="180"/>
+    <rect x="1065" y="295" width="50" height="205"/>
+    <rect x="1125" y="270" width="80" height="230"/>
+    <rect x="1215" y="310" width="60" height="190"/>
+    <rect x="1285" y="285" width="55" height="215"/>
+    <rect x="1350" y="320" width="75" height="180"/>
+    <rect x="1435" y="295" width="50" height="205"/>
+    <rect x="1495" y="280" width="70" height="220"/>
+    <rect x="1575" y="315" width="25" height="185"/>
+  </g>
+
+  <!-- Front buildings (layer 3) - darkest -->
+  <g fill="url(#bldg3)">
+    <rect x="0"    y="360" width="80" height="140"/>
+    <rect x="90"   y="340" width="60" height="160"/>
+    <rect x="160"  y="370" width="90" height="130"/>
+    <rect x="260"  y="350" width="55" height="150"/>
+    <rect x="325"  y="370" width="75" height="130"/>
+    <rect x="410"  y="345" width="65" height="155"/>
+    <rect x="485"  y="365" width="55" height="135"/>
+    <rect x="550"  y="335" width="90" height="165"/>
+    <rect x="650"  y="370" width="60" height="130"/>
+    <rect x="720"  y="350" width="80" height="150"/>
+    <rect x="810"  y="365" width="55" height="135"/>
+    <rect x="875"  y="340" width="75" height="160"/>
+    <rect x="960"  y="370" width="60" height="130"/>
+    <rect x="1030" y="345" width="85" height="155"/>
+    <rect x="1125" y="365" width="55" height="135"/>
+    <rect x="1190" y="335" width="70" height="165"/>
+    <rect x="1270" y="370" width="65" height="130"/>
+    <rect x="1345" y="350" width="80" height="150"/>
+    <rect x="1435" y="370" width="55" height="130"/>
+    <rect x="1500" y="345" width="70" height="155"/>
+    <rect x="1580" y="365" width="20" height="135"/>
+  </g>
+
+  <!-- Tiny warm window lights -->
+  <g fill="#d49a52" opacity="0.55">
+    <rect x="42" y="395" width="2" height="3"/><rect x="50" y="402" width="2" height="3"/>
+    <rect x="105" y="378" width="2" height="3"/><rect x="120" y="395" width="2" height="3"/>
+    <rect x="180" y="410" width="2" height="3"/><rect x="210" y="420" width="2" height="3"/>
+    <rect x="275" y="385" width="2" height="3"/><rect x="345" y="395" width="2" height="3"/>
+    <rect x="430" y="380" width="2" height="3"/><rect x="500" y="410" width="2" height="3"/>
+    <rect x="575" y="385" width="2" height="3"/><rect x="670" y="395" width="2" height="3"/>
+    <rect x="740" y="380" width="2" height="3"/><rect x="825" y="400" width="2" height="3"/>
+    <rect x="895" y="380" width="2" height="3"/><rect x="975" y="395" width="2" height="3"/>
+    <rect x="1055" y="390" width="2" height="3"/><rect x="1145" y="395" width="2" height="3"/>
+    <rect x="1215" y="370" width="2" height="3"/><rect x="1295" y="400" width="2" height="3"/>
+    <rect x="1370" y="385" width="2" height="3"/><rect x="1465" y="395" width="2" height="3"/>
+    <rect x="1525" y="380" width="2" height="3"/>
+  </g>
+
+  <!-- Atmospheric haze overlay -->
+  <rect width="1600" height="500" fill="url(#haze)"/>
+</svg>
