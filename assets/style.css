@@ -176,47 +176,42 @@ p { margin: 0 0 1.3em; }
   min-height: 220px;
   overflow: hidden;
   background:
-    linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.22) 100%),
-    url("images/banner-cityscape.svg") center/cover no-repeat,
-    #25232e;
+    url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
+  background-color: #1a1410;
 }
 
 .banner::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,.18);
+  background: rgba(0,0,0,.48);
   pointer-events: none;
 }
 
 /* Variant backgrounds */
 .banner--home {
-  min-height: 200px;
+  min-height: 220px;
   background:
-    linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.25) 100%),
-    url("images/banner-cityscape.svg") center/cover no-repeat,
-    #25232e;
+    url("https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
+  background-color: #1a1816;
 }
 
 .banner--books {
   background:
-    linear-gradient(180deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.30) 100%),
-    url("images/banner-books.svg") center/cover no-repeat,
-    #1a1410;
+    url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
+  background-color: #1a1410;
 }
 
 .banner--office {
   background:
-    linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.28) 100%),
-    url("images/banner-cityscape.svg") center/cover no-repeat,
-    #25232e;
+    url("https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
+  background-color: #1a1816;
 }
 
 .banner--city {
   background:
-    linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.22) 100%),
-    url("images/banner-cityscape.svg") center/cover no-repeat,
-    #25232e;
+    url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
+  background-color: #1a1410;
 }
 
 .banner-text {
