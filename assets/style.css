@@ -59,7 +59,7 @@ p { margin: 0 0 1.3em; }
   margin-bottom: 18px;
 }
 .logo img {
-  height: 52px;
+  height: 46px;
   width: auto;
 }
 
@@ -392,7 +392,7 @@ h3 {
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid var(--border);
+  border-top: none;
   border-left: 1px solid var(--border);
   margin-top: 32px;
 }
@@ -401,7 +401,7 @@ h3 {
   padding: 26px 22px;
   min-height: 190px;
   border-right: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  border-bottom: none;
 }
 
 .card-item .card-num {
@@ -419,7 +419,7 @@ h3 {
 
 /* Timeline */
 .timeline {
-  border-top: 1px solid var(--border);
+  border-top: none;
   margin-top: 24px;
 }
 
@@ -428,7 +428,7 @@ h3 {
   grid-template-columns: 200px 1fr;
   gap: 28px;
   padding: 22px 0;
-  border-bottom: 1px solid var(--border);
+  border-bottom: none;
 }
 
 .tl-date {
@@ -480,9 +480,9 @@ h3 {
 
 .media-item {
   padding: 22px 0;
-  border-bottom: 1px solid var(--border);
+  border-bottom: none;
 }
-.media-item:first-child { border-top: 1px solid var(--border); }
+.media-item:first-child { border-top: none; }
 
 /* Office grid */
 .office-grid {
@@ -522,7 +522,7 @@ h3 {
    FOOTER  — reference: social icons centered, firm name, copyright
    ========================================================== */
 .site-footer {
-  border-top: 1px solid #e0e0e0;
+  border-top: none;
   padding: 36px 0 32px;
   background: #fff;
   text-align: center;
@@ -571,7 +571,7 @@ h3 {
   .mobile-header {
     display: block;
     background: #fff;
-    border-bottom: 1px solid var(--border);
+    border-bottom: none;
   }
 
   .mob-bar {
