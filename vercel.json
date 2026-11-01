@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    { "source": "/biography", "destination": "/#about", "permanent": true },
+    { "source": "/biography/(.*)", "destination": "/#about", "permanent": true },
+    { "source": "/the-firm", "destination": "/#about", "permanent": true },
+    { "source": "/the-firm/(.*)", "destination": "/#about", "permanent": true },
+    { "source": "/client-testimonials", "destination": "/#why", "permanent": true },
+    { "source": "/client-testimonials/(.*)", "destination": "/#why", "permanent": true },
+    { "source": "/media", "destination": "/#media", "permanent": true },
+    { "source": "/media/(.*)", "destination": "/#media", "permanent": true },
+    { "source": "/offices", "destination": "/#contact", "permanent": true },
+    { "source": "/offices/(.*)", "destination": "/#contact", "permanent": true }
+  ]
+}
